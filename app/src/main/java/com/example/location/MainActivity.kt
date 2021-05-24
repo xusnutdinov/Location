@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         btnGetFromDB = findViewById(R.id.button)
 
         btnStart.setOnClickListener {
+            // Проверка рзрешений на использование служб геолокации
             if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) !=
                     PackageManager.PERMISSION_GRANTED &&
                     checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) !=
